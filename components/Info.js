@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '../public/vercel.svg'
 
 const content = [
 	{
@@ -35,55 +36,53 @@ const content = [
 		}
 	}
 ];
-const ContentItem = (props) => {
-	// const {image, category, title, content, author} = props;
+
+const Info = () => {
 	return (
-		<div className="flex-1 px-6">
-			<div className="bg-gray-300 aspect-h-1 aspect-w-1 relative">
-				<img src={props.image} alt="" className="object-cover"/>
-				<div
-					className="absolute w-full h-full left-0 top-0 bg-gradient-to-t from-black hover:opacity-100 opacity-0 transform duration-200">
-					<div className="w-full h-full flex items-end p-6">
-						<div>
-							<div className="bg-red-800 px-2 py-1 text-white uppercase inline-block mb-6" style={{fontSize:'10px'}}>{props.category}</div>
-							<h2 className="text-white text-xl font-serif mb-4">
-								{props.title}
-							</h2>
-							<p className='text-white text-xs line-clamp-3 mb-6'>{props.content}</p>
-							<div className='flex items-center'>
-								<div className='h-8 w-8 rounded-full bg-gray-400 overflow-hidden mr-4'>
-									<img src={props.photo} alt="" className='object-cover w-full h-full'/>
-								</div>
-								<div className='text-xs text-white'>by {props.name} * {props.date}</div>
-							</div>
+		<div className='container bg-gray-100 mx-auto w-full max-w-7xl'>
+				<div className='md:flex gap-4 px-4 py-6 flex-wrap'>
+					{/*sm:flex-row*/}
+
+					<div className="flex-1 bg-red-50 w-full rounded overflow-hidden  shadow-sm hover:shadow-md transition duration-200 ease-in">
+						<img
+							src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+							alt="" className="h-96 w-full object-cover"/>
+						<div className="font-semibold py-6 px-2 m-4">
+							<p className="text-green-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Beatae, vero?</p>
+							<p className="text-gray-400">test test</p>
 						</div>
 					</div>
+
+
+					<div className="flex-1 bg-red-50 w-full rounded overflow-hidden  shadow-sm hover:shadow-md transition duration-200 ease-in">
+						<img
+							src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+							alt="" className="h-96 w-full object-cover"/>
+						<div className="font-semibold py-6 px-2 m-4">
+							<p className="text-green-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Beatae, vero?</p>
+							<p className="text-gray-400">test test</p>
+						</div>
+					</div>
+
+					<div className="flex-1 bg-red-50 w-full rounded overflow-hidden  shadow-sm hover:shadow-md transition duration-200 ease-in">
+						<img
+							src="https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+							alt="" className="h-96 w-full object-cover"/>
+						<div className="font-semibold py-6 px-2 m-4">
+							<p className="text-green-400 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Beatae, vero?</p>
+							<p className="text-gray-400">test test</p>
+						</div>
+					</div>
+
 				</div>
-			</div>
+
+
+
 		</div>
 	);
 };
 
-const Content = () => {
-	return (
-		<div className="w-full border-b">
-			<div className="mx-auto max-w-7xl">
-				<div className="-mx-6 py-6 divide-x  md:flex md:mx-2 md:py-2">
-					{content.map((item, index) => {
-						return <ContentItem image={item.image} key={index}
-											category={item.category}
-											title={item.title}
-											content={item.content}
-											photo={item.author.photo}
-											name={item.author.name}
-											date={item.created_at}
-						/>;
-					})}
-				</div>
-			</div>
-
-		</div>
-	);
-};
-
-export default Content;
+export default Info;

@@ -5,6 +5,7 @@ import Header from "../components/UI/Header";
 import Navbar from "../components/UI/Navbar";
 import Headline from "../components/UI/Headline";
 import Content from "../components/Content";
+import Info from "../components/Info";
 
 export default function Home() {
 	return (
@@ -17,7 +18,8 @@ export default function Home() {
 			<Header/>
 			<Navbar />
 			<Headline />
-			<Content />
+			{/*<Content />*/}
+			<Info />
 
 		</div>
 	);
