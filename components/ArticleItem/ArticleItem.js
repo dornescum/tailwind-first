@@ -7,7 +7,7 @@ const ArticleItem = ({article}) => {
 			<div className=' bg-gray-100 mx-auto w-full max-w-7xl'>
 				<div className=" gap-4 px-4 py-6  ">
 
-						<Link href={`/article/${article.id}`}>
+						<Link href={`/${article.category}/${article.id}`}>
 							<a>
 
 
