@@ -68,7 +68,8 @@ const Content = () => {
 	return (
 		<div className="w-full border-b">
 			<div className="mx-auto max-w-7xl">
-				<div className="-mx-6 py-6 divide-x  md:flex md:mx-2 md:py-2">
+				{/*md:flex md:mx-2 md:py-2*/}
+				<div className="-mx-6 py-6 divide-x flex ">
 					{content.map((item, index) => {
 						return <ContentItem image={item.image} key={index}
 											category={item.category}

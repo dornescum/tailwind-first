@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+   "title": "MJ",
+   "category": "linux",
+    "desc": "articol about linux",
+    "author":" rewrewr"
+  },
+  {
+    "id": 2,
+   "title":" Elvis",
+   "category": "mac",
+    "desc": "Elvis is a classic",
+    "author": "rewrewr"
+  }
+]

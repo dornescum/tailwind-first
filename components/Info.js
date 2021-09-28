@@ -1,5 +1,7 @@
 import React from 'react';
 import img from '../public/vercel.svg'
+// import { server } from '../config'
+
 
 const content = [
 	{
@@ -84,5 +86,18 @@ const Info = () => {
 		</div>
 	);
 };
+
+
+// export const getStaticProps = async () => {
+// 	const res = await fetch(`${server}/api/articles`)
+// 	const articles = await res.json()
+//
+// 	return {
+// 		props: {
+// 			articles,
+// 		},
+// 	}
+// }
+
 
 export default Info;
