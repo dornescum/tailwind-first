@@ -66,6 +66,26 @@ const NavabarTc = () => {
 								</Link>
 
 							</li>
+							<li className="nav-item">
+								<Link href="/react">
+									<a
+										className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75">
+										<i className="fab fa-pinterest text-lg leading-lg text-black opacity-75"></i><span className="ml-2">React</span>
+									</a>
+
+								</Link>
+
+							</li>
+							<li className="nav-item">
+								<Link href="/next">
+									<a
+										className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75">
+										<i className="fab fa-pinterest text-lg leading-lg text-black opacity-75"></i><span className="ml-2">Next</span>
+									</a>
+
+								</Link>
+
+							</li>
 						</ul>
 					</div>
 				</div>

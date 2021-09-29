@@ -1,15 +1,16 @@
-import Layout from "../../components/UI/Layout";
+import React from 'react';
 import {server} from "../../config";
+import Layout from "../../components/UI/Layout";
 import ArticlesList from "../../components/ArticlesList/ArticlesList";
 
-const IndexHtml = ({articles}) => {
+const IndexReact = ({articles}) => {
 	const filteredReact = articles.filter((art) => {
-		return art.category === 'html';
+		return art.category === 'react';
 	});
 	return <Layout title="html">
 
-					<ArticlesList articles={filteredReact}/>
-			</Layout>;
+		<ArticlesList articles={filteredReact}/>
+	</Layout>;
 };
 
 export const getStaticProps = async () => {
@@ -22,4 +23,5 @@ export const getStaticProps = async () => {
 		},
 	};
 };
-export default IndexHtml;
+
+export default IndexReact;
