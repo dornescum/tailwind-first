@@ -10,7 +10,7 @@ const ArticleItem = ({article}) => {
 						<Link href={`/${article.category}/${article.id}`}>
 						{/*<Link href={`/article/${article.id}`}>*/}
 							<a>
-								<img src={article.img}  alt={article.title} className='object-center h-96 w-full'/>
+								<img src={article.img}  alt={article.title} className='object-center h-96 md:w-96 sm:full'/>
 								<h3 className='px-1 py-4 capitalize'>{article.title}</h3>
 								<p className='px-1 py-4'>Category: <span className='p-1 bg-red-50'>#{article.category}</span></p>
 								<p>{article.desc}</p>
