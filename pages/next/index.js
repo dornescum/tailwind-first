@@ -11,7 +11,6 @@ const IndexNext = ({articles}) => {
 	return (
 		<div>
 			<Layout title='next'>
-
 				<ArticlesList articles={filteredNext}/>
 			</Layout>
 		</div>

@@ -3,6 +3,7 @@ import {server} from '../config';
 import cors from 'cors';
 // import {articles} from "../data";
 import Articles from '../articles.json';
+import ArticlesList from "./ArticlesList/ArticlesList";
 
 
 const Test = ({articles}) => {
