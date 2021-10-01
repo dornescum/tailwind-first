@@ -2,10 +2,13 @@ import React, {useState, useEffect} from 'react';
 import Layout from "../../components/UI/Layout";
 import Link from "next/link";
 
+
+
+
 const IndexNode = () => {
 	const [data, setData] = useState([]);
 	useEffect(() => {
-		fetch('http://localhost:5000/api/nodeJs').then(respose => respose.json()).then(json => setData(json));
+		fetch('http://localhost:5000/api/node').then(respose => respose.json()).then(json => setData(json));
 	}, []);
 	console.log(data);
 
@@ -24,10 +27,9 @@ const IndexNode = () => {
 							const {id, name, title, desc, category} = item;
 							return (<div className=" bg-gray-100 mx-auto w-full max-w-7xl" key={id}>
 									<div className=" gap-4 px-4 py-6  ">
-										<Link href={`/${category}/${id}`}>
+										<Link href={`/node/${id}`}>
 											<a>
-												<img src={data.img} alt={data.title}
-													 className="object-center h-96 md:w-96 sm:full"/>
+												<img src={data.img} alt={data.title} className="object-center h-96 md:w-96 sm:full"/>
 												<h3 className="px-1 py-4 capitalize">{title}</h3>
 												<p className="px-1 py-4">Category: <span
 													className="p-1 bg-red-50">#{category}</span></p>
@@ -42,6 +44,8 @@ const IndexNode = () => {
 							);
 						})}
 			</div>
+
+
 		</Layout>
 	);
 };

@@ -3,15 +3,15 @@ import {server} from "../../config";
 import ArticleItem from "../../components/ArticleItem/ArticleItem";
 import React from "react";
 
-const detailsCss =({article})=>{
+const detailsCss = ({article}) => {
 
 	// return <Layout title='Css'>
 	// 	<ArticleItem article={article}/>
 	// </Layout>
-	return	<Layout title='Css'>
+	return <Layout title="Css">
 		<ArticleItem article={article}/>
-	</Layout>
-}
+	</Layout>;
+};
 
 export const getStaticProps = async (context) => {
 	const id = context.params.id;
